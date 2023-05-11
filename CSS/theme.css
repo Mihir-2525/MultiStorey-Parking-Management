@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+/* Body */
+body {
+    height: 100vh !important;
+    width: 100vw !important;
+    /* background-color: #242333 !important; */
+    /* background: linear-gradient(225deg, #, #000000); */
+    font-family: "Lato", sans-serif;
+    background: linear-gradient(225deg, #000, #0d005f);
+    background-size: 100% 200%;
+}
+
+/* PARKING FLOOR BAR */
+nav {
+    /* height: 5vh; */
+    width: 100vh;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px !important;
+}
+
+dl,
+ol,
+ul {
+    margin-bottom: 0 !important;
+}
+
+nav ul li a {
+    margin-inline: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    background: linear-gradient(225deg, #65c913c2, #03a8f4);
+    color: aliceblue;
+    font-size: 25px;
+    /* overflow: hidden; */
+    /* width: 100vw; */
+}
+
+/* Slot Display */
+.parking .slot-display {
+    margin: 5px;
+    color: antiquewhite;
+    background-color: #00ffff0f;
+    height: 60px;
+    width: 200px;
+    border: #1e90ffab solid 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Entry/Exit Gates */
+
+.gate {
+    padding: 5px;
+    color: black;
+    background-color: dodgerblue;
+    width: 25px;
+    overflow: hidden;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 1px;
+}
+
+.entrygate {
+    height: 127px;
+}
+
+.exitgate {
+    height: 105px;
+}
+
+/* ------------ Scrollbar styles ------------ */
+::-webkit-scrollbar {
+    width: 2px;
+    height: 1vh;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #242333;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #444451;
+}

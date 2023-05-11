@@ -1,0 +1,31 @@
+/* Box */
+.modal-body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: linear-gradient(225deg,#65c913c2,#03a8f4);
+}
+.modal-header{
+    color: aliceblue;
+}
+.box span{
+    color: #000000;
+    font-size: small;
+}
+table tr th {
+    padding: 8px;
+    display: flex;
+    margin-right:15px;
+    align-items: center;
+    justify-content: center;
+}
+table tr td input{
+    width: 150px !important;
+}
+/* ------------ Footer ------------ */
+.modal-footer {
+    text-align: center;
+    padding: 2px 6px;
+    background-color: #000000;
+    color: white;
+}

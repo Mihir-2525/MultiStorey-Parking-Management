@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+/* Body */
+body{
+    background-color: #242333;
+    font-family: "Lato", sans-serif;
+}
+
+/* PARKING FLOOR BAR */
+nav{
+    /* height: 5vh; */
+    width: 100vh;
+    padding: 3px 25px;
+}
+ul{
+    list-style:  none;
+    display: flex;    
+    align-items: center;
+}
+nav ul li a{
+    margin-inline: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+header{  
+    background: linear-gradient(225deg,#65c913c2,#03a8f4);
+    color: aliceblue;
+    font-size: 25px;
+    /* overflow: hidden; */
+    /* width: 100vw; */
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar{
+    width: 2px;
+    height: 1vh;
+}
+::-webkit-scrollbar-track{
+    background-color: #242333;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #444451;
+}
+
+/* Main Body */
+.parking-area{
+    /* background-color: #03c4f421; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Ticket Area */
+.book-ticket{
+    /* background-color: #03a8f41a; */
+    padding: 1%;
+}
+/* Button */
+#submitbutton{
+    margin: 15px;
+    padding: 3px;
+    border-radius: 10px;
+    width: 500px;
+    background-color: #03a8f4;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    transition:all 0.4s ease-in-out;
+}
+#submitbutton:hover {
+background: linear-gradient(225deg,#65c913c2,#03a8f4);
+}
+.box{
+    /* margin: 150px; */
+    border-radius: 50px;
+    background-color: #ffffff50;
+    padding: 15px;
+}
+/* .box table{
+    margin-top: 50px;
+    background-color: #000000;
+} */
+.box span{
+    color: #000000;
+    font-size: larger;
+}
+table tr th{
+    /* border:black solid 1px; */
+    padding: 0 70px;
+}
+table tr td{
+    /* border:black solid 1px;   */
+    /* padding: 2 0px; */
+    border-radius: 15px;
+    background-color: #00000010;
+}
+/* PARKING ALLOTEMENT */
+.container {
+    /* padding: 6.8px; */
+    border: #03a8f43d solid 2px;
+    padding: calc(3vh + 15px) 2.5vh;
+    background-color: #242333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    /* margin: 0; */
+    perspective: 1000px;
+    /* margin-bottom: 30px; */
+}
+
+/* Row */
+.row div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 40px;
+    margin: 5px;
+    font-size: 50px;
+}
+.container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.row {
+    display: flex;
+}
+
+/* Parking Slot Area 1 */
+.slot {
+    background-color: #444451;
+    /* border-radius: 5px; */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.slot.selected {
+    background-color: green;
+}
+.slot.occupied {
+    background-color: #fff;
+}
+.slot:not(.occupied):hover {
+    cursor: pointer;
+    transform: scale(1.225);
+}
+
+/* bim */
+.bim{
+    height: 60px;
+    width: 40px;
+}
+
+/* Parking Slot Area 1 */
+.r-slot{
+    background-color: #444451;
+    /* border-radius: 5px; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.r-slot:not(.occupied):hover {
+    cursor: pointer;
+    transform: scale(1.225);
+}
+
+.r-slot.selected {
+    background-color: green;
+}
+
+.r-slot.occupied {
+    background-color: #fff;
+}
+
+/* Display ID in Parking section */
+div span{
+    /* margin: 3px; */
+    /* align-items: center; */
+    color: #ffffff1e;
+    font-size:35%;
+}
+div span:hover {
+    color: #03c4f4;
+}
+div.selected span{
+    color: rgba(0, 56, 53, 0.6);
+}
+div.occupied span{
+    color: black;
+}
+
+/* Button to book slot */
+#booktkt{
+    margin: 50px 0 0 0;
+    padding: 3px;
+    border-radius: 10px;
+    width: 500px;
+    background-color: #03a8f4;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    transition:all 0.4s ease-in-out;
+}
+#booktkt:hover {
+background: linear-gradient(225deg,#65c913c2,#03a8f4);
+}
+
+/* Optional for nowdays */
+/* @media (max-width:900px) 
+{
+    .slot {
+        height: 40px;
+        width: 26.5px;
+        margin: 5px;
+        font-size: 50px;
+    }
+    .r-slot {
+        height: 40px;
+        width: 26.5px;
+        margin: 5px;
+        font-size: 50px;
+    }
+}
+@media (max-width:650px) 
+{
+    .slot {
+        height: 20px;
+        width: 13.3px;
+        margin: 5px;
+        font-size: 50px;
+    }
+    .r-slot {
+        height: 20px;
+        width: 13.3px;
+        margin: 5px;
+        font-size: 50px;
+    }
+} */
+
+
+/* Slot 2 */
+
+/* .slot2 {
+    background-color: #444451;
+    height: 60px;
+    width: 40px;
+    margin: 5px;
+    font-size: 50px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.slot2:not(.occupied):hover {
+    cursor: pointer;
+    transform: scale(1.225);
+}
+
+.slot2.selected {
+    background-color: green;
+}
+
+.slot2.occupied {
+    background-color: #fff;
+} */
+
+/* To add lower main Row */
+
+/* .row1{
+    display: flex;
+}
+.slot1 {
+    background-color: #444451;
+    height: 60px;
+    width: 40px;
+    margin: 5px;
+    font-size: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.slot1:not(.occupied):hover {
+    cursor: pointer;
+    transform: scale(1.225);
+}
+
+.slot1.selected {
+    background-color: green;
+}
+
+.slot1.occupied {
+    background-color: #fff;
+} */
+
+/* To Divide Part */
+/* 
+.slot:nth-of-type(0) {
+    margin-right: 50px;
+} 
+ .seat:nth-last-of-type(1) {
+    margin-left: 18px;
+} 
+.slot:nth-of-type(4) {
+    margin-right: 50px;
+}
+.slot:nth-of-type(6) {
+    margin-right: 50px;
+}
+.slot:nth-of-type(8) {
+    margin-right: 50px;
+}
+.slot:nth-of-type(10) {
+    margin-right: 50px;
+} */

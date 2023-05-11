@@ -1,0 +1,2 @@
+# use for "login.php" as a "index.php" file
+DirectoryIndex login.php

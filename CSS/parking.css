@@ -1,0 +1,147 @@
+/* ------------ Main Body ------------ */
+.parking-area{
+    /* background-color: #242333; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;;
+    align-items: center;
+}
+.parking-area.active .box{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%,-50%) scale(1);
+    }
+
+/* PARKING ALLOTEMENT */
+.container-demo {
+    /* padding: 6.8px; */
+    border: #03a8f43d solid 2px;
+    padding: calc(3vh + 15px) 2.5vh;
+    /* background-color: #242333; */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    /* margin: 0; */
+    /* margin-bottom: 30px; */
+}
+
+/* Row */
+.row-demo .type-demo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 40px;
+    margin: 5px;
+    font-size: 50px;
+}
+.container-demo .type-demo{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.row-demo {
+    display: flex;
+}
+
+/* Parking Slot Area 1 */
+.slot {
+    background-color: #444451;
+    /* border-radius: 5px; */
+    color: #a7a7a7;
+    height: 60px;
+    width: 45px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.slot.selected {
+    background-color: green;
+}
+.slot.occupied {
+    background-color: #fff;
+    color: black;
+}
+.slot.occupied:hover {
+    cursor: no-drop;
+}
+.slot:not(.occupied):hover {
+    cursor: pointer;
+    transform: scale(1.225);
+}
+
+/* bim */
+.bim{
+    height: 60px;
+    width: 40px;
+}
+
+/* Parking Slot Area 1 */
+.r-slot{
+    background-color: #444451;
+    /* border-radius: 5px; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #a7a7a7;
+    height: 60px;
+    width: 45px;
+}
+.r-slot:not(.occupied):hover {
+    cursor: pointer;
+    transform: scale(1.225);
+}
+
+.r-slot.selected {
+    background-color: green;
+}
+
+.r-slot.occupied {
+    background-color: #fff;
+    color: black;
+}
+.r-slot.occupied:hover {
+    cursor: no-drop;
+}
+
+/* Display ID in Parking section */
+.type-demo span{
+    margin: 3px;
+    align-items: center;
+    color: #ffffff1e;
+    font-size:35%;
+}
+.type-demo span:hover {
+    color: #03c4f4;
+}
+.type-demo .selected span{
+    color: white;
+}
+.type-demo .occupied span{
+    color: black;
+}
+
+/* Button to book slot */
+#booktkt{
+    width: 500px;
+    height: 25px;
+    margin: 50px 0;
+    padding: 3px 100px;
+    border-radius: 10px;
+    background-color: #03a8f4;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    size: 50px;
+    text-align: center;
+    transition:all 0.4s ease-in-out;
+}
+#booktkt:hover {
+background: linear-gradient(225deg,#65c913c2,#03a8f4);
+}
