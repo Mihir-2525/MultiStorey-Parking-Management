@@ -41,6 +41,8 @@ mysqli_close($conn);
   <title>Admin</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- To set icon -->
+  <link rel="icon" href="./images/icon.ico" type="image/x-icon">
 
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
   <!-- include new css -->
@@ -55,6 +57,7 @@ mysqli_close($conn);
     /* Custom scrollbar */
     ::-webkit-scrollbar {
       width: 8px;
+      height: 8px;
     }
 
     ::-webkit-scrollbar-thumb {
@@ -124,7 +127,7 @@ mysqli_close($conn);
 </body>
 
 <!-- Logout Button Display -->
-<div style="position: fixed; bottom: 20px; right: 20px;background-color: #eeeeeeed;border-radius: 7px;">
+<div style="position: fixed; bottom: 20px; right: 20px;background-color: #eeeeeeee;border-radius: 7px;">
   <form action="" method="post" >
     <button type="submit" class="btn btn-outline-danger" name="logout">Logout</button>
   </form>

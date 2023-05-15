@@ -14,11 +14,11 @@
                                     <input type="hidden" name="slot_no" value="<?= $i ?>">
                                     <tr>
                                         <th><span>Vehicle Number</span></th>
-                                        <td><input type="text" style="width: 150px;" pattern="^[A-Z]{2}[0-9]{2}[A-Z]{2}[0-9]{4}$" name="vno" required></td>
+                                        <td><input type="text" style="width: 150px;" pattern="^[A-Z]{2}[0-9]{2}[A-Z]{2}[0-9]{4}$" maxlength="10" name="vno" required></td>
                                     </tr>
                                     <tr>
                                         <th><span>Mobile Number</span></th>
-                                        <td><input type="number" pattern="[0-9]{10}" name="mno" size="10" style="width: 150px;" min="6000000000" max="9999999999" required></td>
+                                        <td><input type="tel" pattern="[6-9]{3}[0-9]{7}" maxlength="10" name="mno" style="width: 150px;" required></td>
                                     </tr>
                                     <tr>
                                         <th><span>Email</span></th>

@@ -84,11 +84,18 @@ if (!$conn) {
 ?>
 
 <body>
-    <form method="post">
-        From : <input type="datetime-local" name="from">
-        To : <input type="datetime-local" name="to">
-        <input type="submit" value="search" name="search">
+    <form method="post" class="form-inline">
+        <div class="form-group mr-4">
+            <label for="from" class="mr-2">From</label>
+            <input type="datetime-local" class="form-control" name="from" max="<?= date("Y-m-d\TH:i:s") ?>" <?php if (isset($_POST['from'])) { ?> value="<?= $_POST['from'] ?>" <?php } ?>>
+        </div>
+        <div class="form-group mr-4">
+            <label for="to" class="mr-2">To:</label>
+            <input type="datetime-local" class="form-control" name="to" max="<?= date("Y-m-d\TH:i:s") ?>" <?php if (isset($_POST['to'])) { ?> value="<?= $_POST['to'] ?>" <?php } ?>>
+        </div>
+        <button type="submit" class="btn btn-primary" name="search">Search</button>
     </form>
+
     <hr>
     <?php
     if (isset($_POST['search'])) {

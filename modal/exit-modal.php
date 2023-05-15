@@ -13,7 +13,7 @@
                                 <table>
                                     <tr>
                                         <th><span>Slot Number</span></th>
-                                        <td><input type="number" max="<?= $i ?>" min="<?= $i ?>" name="slotno" required></td>
+                                        <td><input type="number" max="<?= $i ?>" min="<?= $i ?>" name="slotno" value="<?= $i ?>" readonly></td>
                                         <input type="hidden" name="slot_no" value="<?= $i ?>">
                                     </tr>
                                     <!-- <tr>
