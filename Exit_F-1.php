@@ -227,7 +227,7 @@ if (isset($_POST['dlt'])) {
         // problem with stmt or query;
     }
 
-    header("location: ./Exit_F-0.php");
+    header("location: ./Exit_F-1.php");
     ob_end_clean();
 }
 ?>
