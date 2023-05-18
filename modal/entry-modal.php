@@ -18,7 +18,7 @@
                                     </tr>
                                     <tr>
                                         <th><span>Mobile Number</span></th>
-                                        <td><input type="tel" pattern="[6-9]{3}[0-9]{7}" maxlength="10" name="mno" style="width: 150px;" required></td>
+                                        <td><input type="tel" pattern="[6-9]{1}[0-9]{9}" maxlength="10" name="mno" style="width: 150px;" required></td>
                                     </tr>
                                     <tr>
                                         <th><span>Email</span></th>
